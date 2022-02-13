@@ -1,0 +1,135 @@
+.comment {
+    padding-top: 20px;
+    transition: all 0.2s linear;
+    &-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    &-img {
+        width: 40px;
+        height: 40px;
+    }
+    &-add {
+        width: 100%;
+        border: solid 1px $light-gray;
+        padding: 10px 20px 50px;
+        border-radius: 10px;
+        &:focus {
+            border: 1px solid $grayish-blue;
+        }
+    }
+    &-submit {
+        padding: 10px 30px;
+        border-radius: 10px;
+        color: $very-light-gray;
+        background-color: $moderate-blue;
+        text-transform: uppercase;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .comment {
+        &-container {
+            display: flex;
+            flex-direction: column;
+        }
+        &-bottom-mobile {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+.comment-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hide {
+    display: none;
+}
+.show.hide {
+    display: flex;
+}
+.comment-container-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.comment-input {
+    margin-top: 20px;
+    .avatar-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .input-box {
+        width: 100%;
+        .reply-input {
+            width: 100%;
+            border: none;
+            padding: 10px 20px 50px;
+            border-radius: 10px;
+        }
+    }
+    .submit-btn {
+        background-color: $moderate-blue;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+.interactive-right {
+    width: 100%;
+}
+
+.edit-delete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    .delete-btn {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+    }
+    .edit-btn {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+    }
+}
+.text-area {
+    width: 100%;
+    border: none;
+    padding: 10px 20px 50px;
+    border-radius: 10px;
+}
+.submit.show  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+    .update-btn {
+        background-color: $moderate-blue;
+        color: #fff;
+    }
+}
+.comment-replies {
+    width: 90%;
+    margin-left: auto;
+}

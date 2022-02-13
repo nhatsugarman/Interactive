@@ -1,0 +1,111 @@
+.interactive {
+    & + .interactive {
+        padding-top: 20px;
+    }
+    &-container {
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-left {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: $very-light-gray;
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+    &-plus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-minus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    &-action {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+  
+    &-text {
+        font-weight: 400;
+    }
+    &-icon {
+        width: 40px;
+        height: 40px;
+    }
+    &-name {
+        font-weight: 700;
+    }
+    &-self {
+        background-color: $moderate-blue;
+        padding: 0 5px;
+        border-radius: 5px;
+        p {
+            color: $very-light-gray;
+        }
+    }
+    &-delete {
+        color: $soft-red
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .interactive-reply,
+    .interactive-left {
+        display: none;
+    }
+    .interactive {
+        &-container {
+            flex-direction: column;
+        }
+        &-info {
+            gap: 15px;
+        }
+    }
+    .mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            background-color: $very-light-gray;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+    }
+}

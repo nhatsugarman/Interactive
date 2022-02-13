@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+body {
+    font-family: $font;
+    color: $grayish-blue;
+    font-weight: 400;
+    font-size: $font-size;
+}
+
+.wrapper {
+    max-width: $desktop;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+input {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: $font;
+}
+
+.main {
+    background-color: $very-light-gray;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-blue;
+    cursor: pointer;
+}
+
+.reply {
+    width: 90%;
+    margin-left: auto;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: $moderate-blue;
+    transition: all 0.2s linear;
+    span {
+        font-weight: 700;
+    }
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: $very-light-gray;
+    text-transform: uppercase;
+    &-red{
+        background-color: $soft-red;
+    }
+    &-gray-blue {
+        background-color: $grayish-blue;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .main {
+        padding: 40px 10px;
+    }
+    .hide-on-mobile {
+        display: none !important;
+    }
+    .container {
+        padding: 0;
+    }
+    .reply {
+        width: 95%;
+        margin-left: auto;
+    }
+}
+@media screen and (min-width: 760px) {
+    .mobile {
+        display: none !important;
+    }
+}

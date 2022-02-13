@@ -1,0 +1,39 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    &.open {
+        display: flex;
+    }
+    
+    &-content {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px 0;
+        width: 340px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        margin: auto;
+    }
+    &-text {
+        color: $dark-blue;
+        font-size: 18px;
+    }
+    &-action {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-description {
+        font-size: 14px;
+    }
+}
